@@ -1,0 +1,1 @@
+::: gabocutter_example.foo

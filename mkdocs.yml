@@ -1,0 +1,59 @@
+site_name: gabocutter-example
+repo_url: https://github.com/gabrieltorresgamez/gabocutter-example
+site_url: https://gabrieltorresgamez.github.io/gabocutter-example
+site_description: An example of a project generated with gabrieltorresgamez/gabocutter
+site_author: Gabriel Torres Gamez
+edit_uri: edit/main/docs/
+repo_name: gabrieltorresgamez/gabocutter-example
+copyright: Maintained by <a href="https://gabrieltorresgamez.com">gabrieltorresgamez</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [gabocutter_example]
+theme:
+  name: material
+  feature:
+    tabs: true
+  features:
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gabrieltorresgamez/gabocutter-example
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
